@@ -139,3 +139,5 @@ printf
 macro
 
 # Makefiles
+
+# Handling Empty / NULL parameters

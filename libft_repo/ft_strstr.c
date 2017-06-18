@@ -6,7 +6,7 @@
 /*   By: wlin <wlin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/07 11:32:51 by wlin              #+#    #+#             */
-/*   Updated: 2017/06/15 15:45:42 by wlin             ###   ########.fr       */
+/*   Updated: 2017/06/17 19:40:42 by wlin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strstr(char *big, char *little)
 
 	i = 0;
 	if (*little == '\0')
-		return(big);
+		return (big);
 	while (big[i] != '\0')
 	{
 		j = 0;

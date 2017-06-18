@@ -6,7 +6,7 @@
 /*   By: wlin <wlin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/08 14:55:10 by wlin              #+#    #+#             */
-/*   Updated: 2017/06/15 17:32:51 by wlin             ###   ########.fr       */
+/*   Updated: 2017/06/17 19:51:10 by wlin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 	int		i;
 
 	i = 0;
-	if(s)
+	if (s)
 	{
 		sub_str = (char*)malloc(sizeof(char) * (len + 1));
 		sub_ptr = sub_str;

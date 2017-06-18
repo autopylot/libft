@@ -6,7 +6,7 @@
 /*   By: wlin <wlin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/08 14:51:33 by wlin              #+#    #+#             */
-/*   Updated: 2017/06/15 16:59:59 by wlin             ###   ########.fr       */
+/*   Updated: 2017/06/17 20:25:24 by wlin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,14 @@
 
 int	ft_strnequ(char const *s1, char const *s2, size_t n)
 {
-	if(s1 && s2)
+	if (s1 && s2)
 	{
-		while (*s1 && *s2 && n--)
-		{
-			if (*s1 == *s2)
-			{
-				s1++;
-				s2++;
-			}
-			else
-				return (0);
-		}
-		return (1);
+		if (n == 0)
+			return (1);
+		if (*s1 == '\0' && *s2 == '\0')
+			return (1);
+		return (ft_strncmp(s1, s2, n) != 0 ? 0 : 1);
 	}
-	return (0);
+	else
+		return (0);
 }

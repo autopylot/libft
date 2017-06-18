@@ -6,7 +6,7 @@
 /*   By: wlin <wlin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/07 14:53:11 by wlin              #+#    #+#             */
-/*   Updated: 2017/06/15 16:29:05 by wlin             ###   ########.fr       */
+/*   Updated: 2017/06/17 10:57:05 by wlin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,8 @@ void	*ft_memalloc(size_t size)
 	void *ptr;
 
 	ptr = (void*)malloc(size);
-	if (ptr)
-	{
-		ft_bzero(ptr, size);
-		return (ptr);
-	}
-	else
+	if (!(ptr = (void*)malloc(size)))
 		return (NULL);
+	ft_bzero(ptr, size);
+	return (ptr);
 }

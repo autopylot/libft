@@ -6,7 +6,7 @@
 /*   By: wlin <wlin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/09 16:59:25 by wlin              #+#    #+#             */
-/*   Updated: 2017/06/14 14:42:37 by wlin             ###   ########.fr       */
+/*   Updated: 2017/06/17 10:40:04 by wlin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,10 @@ void	ft_putstr(char const *s)
 {
 	char *s_ptr;
 
-	s_ptr = (char*)s;
-	while (*s_ptr)
+	if (s)
 	{
-		write(1, s_ptr++, 1);
+		s_ptr = (char*)s;
+		while (*s_ptr)
+			write(1, s_ptr++, 1);
 	}
 }

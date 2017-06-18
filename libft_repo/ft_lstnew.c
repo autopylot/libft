@@ -6,7 +6,7 @@
 /*   By: wlin <wlin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/09 19:04:09 by wlin              #+#    #+#             */
-/*   Updated: 2017/06/15 19:42:48 by wlin             ###   ########.fr       */
+/*   Updated: 2017/06/17 10:58:33 by wlin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,7 @@ t_list	*ft_lstnew(void const *content, size_t content_size)
 	new_lst->next = NULL;
 	if (content)
 		ft_memcpy(new_lst->content, content, content_size);
+	else
+		new_lst->content = NULL;
 	return (new_lst);
 }

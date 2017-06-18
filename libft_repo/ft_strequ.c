@@ -6,7 +6,7 @@
 /*   By: wlin <wlin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/08 14:17:58 by wlin              #+#    #+#             */
-/*   Updated: 2017/06/15 16:57:33 by wlin             ###   ########.fr       */
+/*   Updated: 2017/06/17 20:59:23 by wlin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,13 @@
 
 int	ft_strequ(char const *s1, char const *s2)
 {
-	if(s1 && s2)
+	if (s1 && s2)
 	{
-		while (*s1 && *s2)
+		if (*s1 == '\0' && *s2 == '\0')
+			return (1);
+		else if ((*s1 == '\0' && *s2 != '\0') || (*s2 != '\0' && *s2 == '\0'))
+			return (ft_strcmp(s1, s2) != 0 ? 0 : 1);
+		while (*s1 || *s2)
 		{
 			if (*s1 == *s2)
 			{
@@ -28,5 +32,6 @@ int	ft_strequ(char const *s1, char const *s2)
 		}
 		return (1);
 	}
-	return (0);
+	else
+		return (0);
 }

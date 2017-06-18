@@ -6,7 +6,7 @@
 /*   By: wlin <wlin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/07 15:46:28 by wlin              #+#    #+#             */
-/*   Updated: 2017/06/15 16:53:51 by wlin             ###   ########.fr       */
+/*   Updated: 2017/06/17 19:48:27 by wlin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strmap(char const *s, char (*f)(char))
 {
-	char *map_str;
-	char *s_ptr;
-	int i;
+	char	*map_str;
+	char	*s_ptr;
+	int		i;
 
 	i = 0;
 	s_ptr = (char*)s;

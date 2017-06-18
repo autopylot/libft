@@ -6,7 +6,7 @@
 /*   By: wlin <wlin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/14 18:57:39 by wlin              #+#    #+#             */
-/*   Updated: 2017/06/14 19:00:12 by wlin             ###   ########.fr       */
+/*   Updated: 2017/06/17 21:28:00 by wlin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,13 @@
 
 void	ft_lstprint(t_list *head)
 {
-    t_list *temp;
-    temp = head;
-    while (temp != NULL)
-    {
-    	ft_putstr(head->content);
+	t_list *temp;
+
+	temp = head;
+	while (temp != NULL)
+	{
+		ft_putstr(head->content);
 		ft_putchar('\n');
-    	temp=temp->next;
-    }
+		temp = temp->next;
+	}
 }

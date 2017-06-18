@@ -6,16 +6,16 @@
 /*   By: wlin <wlin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/14 19:18:22 by wlin              #+#    #+#             */
-/*   Updated: 2017/06/14 19:19:44 by wlin             ###   ########.fr       */
+/*   Updated: 2017/06/17 21:32:13 by wlin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-long ft_abs(long value)
+long	ft_abs(long value)
 {
 	if (value < 0)
 		return (-value);
 	else
-		return value;
+		return (value);
 }

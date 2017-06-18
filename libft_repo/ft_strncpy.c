@@ -6,7 +6,7 @@
 /*   By: wlin <wlin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/07 10:19:22 by wlin              #+#    #+#             */
-/*   Updated: 2017/06/15 13:41:54 by wlin             ###   ########.fr       */
+/*   Updated: 2017/06/16 20:40:09 by wlin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,5 @@ char	*ft_strncpy(char *dst, const char *src, size_t len)
 		*dst_ptr++ = '\0';
 		--len;
 	}
-	return (dst_ptr);
+	return (dst);
 }
