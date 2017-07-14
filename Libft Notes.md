@@ -135,9 +135,6 @@ c unit  tests
 
 # Debugging
 
-printf
-macro
-
 # Makefiles
 
 # Handling Empty / NULL parameters
