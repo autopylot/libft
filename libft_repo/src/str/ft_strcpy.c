@@ -6,7 +6,7 @@
 /*   By: wlin <wlin@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/07 10:13:46 by wlin              #+#    #+#             */
-/*   Updated: 2017/07/14 10:31:27 by wlin             ###   ########.fr       */
+/*   Updated: 2017/07/14 16:52:04 by wlin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 char	*ft_strcpy(char *dst, const char *src)
 {
-	return(ft_memcpy(dst, src, ft_strlen(src) + 1));
+	return (ft_memcpy(dst, src, ft_strlen(src) + 1));
 }
